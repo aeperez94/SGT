@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sgt</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping class="Entidades.Turno"/>
+    <mapping class="Entidades.Administrador"/>
+    <mapping class="Entidades.AgendaMedica"/>
+    <mapping class="Entidades.Especialidad"/>
+    <mapping class="Entidades.HistoriaClinica"/>
+    <mapping class="Entidades.Medico"/>
+    <mapping class="Entidades.Paciente"/>
+    <mapping class="Entidades.Plan"/>
+    <mapping class="Entidades.RelMedEsp"/>
+    <mapping class="Entidades.RelMedPlan"/>
+  </session-factory>
+</hibernate-configuration>
